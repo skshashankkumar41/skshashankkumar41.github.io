@@ -1,1 +1,34 @@
-Hello World
+<!doctype html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+</head>
+
+<body>
+ 
+  <script>
+      console.log("INSIDE SCRIPT");
+    makePostCall = function (url, data) { // here the data and url are not hardcoded anymore
+   var json_data = JSON.stringify(data);
+
+    return $.ajax({
+        type: "POST",
+        url: url,
+        data: json_data,
+        dataType: "json",
+        contentType: "application/json;charset=utf-8"
+    });
+}
+
+// and here a call example
+    makePostCall("https://kmltizy62e.execute-api.us-east-2.amazonaws.com/First", {"type":"hi"})
+    .success(function(data){
+               console.log(data);
+   })
+    .fail(function(sender, message, details){
+           console.log("Sorry, something went wrong!");
+  });
+    </script>
+
+</body>
+</html>
