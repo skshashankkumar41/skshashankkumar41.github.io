@@ -1,35 +1,33 @@
 <!doctype html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src = "static/js/script.js"></script>
 </head>
 
 <body>
-    "HITHERE"
- 
-  <script>
-      console.log("INSIDE SCRIPT");
-    makePostCall = function (url, data) { // here the data and url are not hardcoded anymore
-   var json_data = JSON.stringify(data);
-
-    return $.ajax({
-        type: "POST",
-        url: url,
-        data: json_data,
-        dataType: "json",
-        contentType: "application/json;charset=utf-8"
-    });
-}
-
-// and here a call example
-    makePostCall("https://kmltizy62e.execute-api.us-east-2.amazonaws.com/First", {"text":"i have chst pain"})
-    .success(function(data){
-               console.log(data);
-   })
-    .fail(function(sender, message, details){
-           console.log("Sorry, something went wrong!");
-  });
-    </script>
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Medical Text Corrector</h1>
+          <p>Type Medical related text with spelling mistakes and we will correct it for you. </p>
+          <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+        </div>
+      </div>    
+    <div class="container-1">
+        <div class="form-group">
+          <input type="text" class="form-control" id="textMedical" aria-describedby="emailHelp" placeholder="I need gaenecologsit">
+          <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="button-div">
+            <button class="btn btn-dark " onclick="getCorrect()">Correct</button>
+            <button class="btn btn-info" onclick="doReset()">Reset</button>
+        </div>
+    </div>
+    <div class="container-2">
+        <h3 class="display-4" id='displayId'></h3>
+    </div>
 
 </body>
 </html>
