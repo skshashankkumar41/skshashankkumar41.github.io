@@ -2,19 +2,19 @@
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 1%;
 }
 
 .inputfield{
     width: 35%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 4%;
+    margin-top: 1%;
     
 }
 
 .button-div{
-    margin-top: 6%;
+    margin-top: 3%;
 }
 
 .red-border-focus .form-control:focus {
