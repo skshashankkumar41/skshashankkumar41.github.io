@@ -58,6 +58,14 @@
                 no-repeat;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+  }
+
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
 body.loading .modal {
