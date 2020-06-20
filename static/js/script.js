@@ -10,6 +10,13 @@ makePostCall = function (url, data) {
     });
 }
 
+window.onload = function(){
+    document.getElementById("textMedical").onclick = function() {
+        document.getElementById("resetButton").scrollIntoView();
+    };
+}
+
+
 function getCorrect(){
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
@@ -27,6 +34,7 @@ function getCorrect(){
     .success(function(data){
         console.log(data)
         document.getElementById("displayId").innerHTML = data.corrected_string;
+        document.getElementById("displayId").scrollIntoView();
     })
     .fail(function(sender, message, details){
             console.log("Sorry, something went wrong!");

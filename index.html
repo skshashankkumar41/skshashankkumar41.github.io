@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/style.css">
     <script src = "static/js/script.js"></script>
 </head>
@@ -10,7 +13,7 @@
 <body>
   
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navigationbar">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                   <a class="nav-link" href="medical_correct/train.html">Train<span class="sr-only">(current)</span></a>
@@ -19,11 +22,12 @@
         </div>
         <div class="mx-auto order-0">
             <a class="navbar-brand mx-auto" href="#">Medical Text Corrector</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              
             </button>
         </div>
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navigationbar">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/skshashankkumar41/skshashankkumar41.github.io">Front-End Repo<span class="sr-only">(current)</span></a>
@@ -43,13 +47,13 @@
         </div>
       </div>    
     <div class="container-1">
-        <div class="form-group">
+        <div class="form-group green-border-focus">
           <input type="text" class="form-control" id="textMedical" aria-describedby="emailHelp" placeholder="I need gaenecologsit">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
         </div>
         <div class="button-div">
             <button class="btn btn-dark " onclick="getCorrect()">Correct</button>
-            <button class="btn btn-info" onclick="doReset()">Reset</button>
+            <button class="btn btn-info" id="resetButton" onclick="doReset()">Reset</button>
         </div>
     </div>
     <div class="container-2">

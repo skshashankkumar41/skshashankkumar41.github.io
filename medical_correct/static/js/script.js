@@ -9,6 +9,12 @@ makePostCall = function (url, data) {
          contentType: "application/json;charset=utf-8"
      });
  }
+
+ window.onload = function(){
+    document.getElementById("trainData").onclick = function() {
+        document.getElementById("resetButton").scrollIntoView();
+    };
+}
  
  function doTrain(){
      var text = document.getElementById("trainData").value;

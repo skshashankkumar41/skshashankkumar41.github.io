@@ -3,6 +3,7 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 4%;
+    margin-bottom: 5%;
 }
 
 .container-2{
@@ -10,6 +11,16 @@
     margin: 0 auto;
     text-align: center;
     margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.button-div{
+    margin-top: 5%;
+}
+
+.green-border-focus .form-control:focus {
+    border: 2px solid #23272B;
+    box-shadow: 0 0 0 0.2rem rgba(27, 31, 23, 0.25);
 }
 
 .modal {

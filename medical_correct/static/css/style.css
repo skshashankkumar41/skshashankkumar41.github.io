@@ -1,8 +1,9 @@
 .container-1{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: center;
     margin-top: 1%;
+    margin-bottom: 5%;
 }
 
 .inputfield{
@@ -14,7 +15,7 @@
 }
 
 .button-div{
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .red-border-focus .form-control:focus {
@@ -25,8 +26,8 @@
 
 
 .green-border-focus .form-control:focus {
-    border: 2px solid #8bc34a;
-    box-shadow: 0 0 0 0.2rem rgba(139, 195, 74, .25);
+    border: 2px solid #23272B;
+    box-shadow: 0 0 0 0.2rem rgba(27, 31, 23, 0.25);
 }
 
 .modal {
