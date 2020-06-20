@@ -14,7 +14,16 @@ function getCorrect(){
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
     console.log(text)
-    makePostCall("https://kmltizy62e.execute-api.us-east-2.amazonaws.com/First", {"text":text})
+    payload = {
+        "request_type": "spell_correct",
+        "text": text
+    }
+    $body = $("body");
+    $(document).on({
+        ajaxStart: function() { $body.addClass("loading");    },
+        ajaxStop: function() { $body.removeClass("loading"); }    
+    });
+    makePostCall("https://kmltizy62e.execute-api.us-east-2.amazonaws.com/First", payload)
     .success(function(data){
         console.log(data)
         document.getElementById("displayId").innerHTML = data.corrected_string;

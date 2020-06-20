@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+    <script src = "static/js/script.js"></script>
+    <title>train</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Train New Words</h1>
+          <p>Type New Words to train our model of Medical Spell Corrector </p>
+          <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+        </div>
+      </div>  
+    <div class="container-1">
+    <div class="form-group green-border-focus">
+        <label for="exampleFormControlTextarea5">Type Words here seperated by comma</label>
+        <textarea class="form-control" id="trainData" rows="3"></textarea>
+      </div>
+      <div class="form-group red-border-focus">
+      <div class="inputfield">
+        <label for="auth">Train Token</label>
+        <input type="password" class="form-control" id="token" aria-describedby="emailHelp" placeholder="" required>
+      </div>
+    </div>
+        <div class="button-div">
+            <button class="btn btn-dark " onclick="doTrain()">Train</button>
+            <button class="btn btn-info" onclick="doReset()">Reset</button>
+        </div>
+    </div>
+    <div class="modal"></div>
+    
+</body>
+</html>
