@@ -57,11 +57,14 @@
                 50% 50% 
                 no-repeat;
 }
+.footer_rel {
+    position: relative;
+
+  }
 
 .footer {
-    position: relative;
+    position: absolute;
     left: 0;
-    bottom: 0;
     width: 100%;
     
   }
