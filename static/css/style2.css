@@ -1,0 +1,29 @@
+.container-1{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body {
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+.card.w-50{
+    background-image: url('cardBack.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin:15px;   
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.card-body{
+    margin:10px
+}

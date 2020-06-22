@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/display.css">
+    <script src="static/js/display.js"></script>
+</head>
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <div class="container-2">
+        <h4 class="display-4" id='displayId'></h4>
+    </div>
+    <div id="container"></div>
+    <script>
+    var data = JSON.parse(localStorage["data"]);
+    console.log("DISPLAYDATA:::",data)
+    console.log("DIGIT::",data.digit)
+    document.getElementById("displayId").innerHTML = "Predicted digit is "+data.digit;
+    Highcharts.chart('container', {
+        chart: {type: 'column'},
+        title: {text: 'Probabilities of Digits'},
+        xAxis: {categories: ['Digits']},
+        series: [{name: 'Zero',
+            data: [data.prob.zero]}, {
+            name: 'One',
+            data: [data.prob.one]}, {
+            name: 'Two',
+            data: [data.prob.two]}, {
+            name: 'Three',
+            data: [data.prob.three]}, {
+            name: 'Four',
+            data: [data.prob.four]}, {
+            name: 'Five',
+            data: [data.prob.five]}, {
+            name: 'Six',
+            data: [data.prob.six]}, {
+            name: 'Seven',
+            data: [data.prob.seven]}, {
+            name: 'Eight',
+            data: [data.prob.eight]}, {
+            name: 'Nine',
+            data: [data.prob.nine]}]});
+    </script>
+
+<div class="button-div">
+    <button class="btn btn-dark " onclick="goHome()" id="backButton">Back</button>
+  
+</div>
+
+</body>
+</html>

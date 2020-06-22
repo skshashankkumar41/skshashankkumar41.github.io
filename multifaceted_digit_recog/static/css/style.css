@@ -1,0 +1,24 @@
+.container-1{
+    
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    
+}
+
+.button-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+
+.btn{
+    width:20em;
+    height: 12em;
+    margin: 10px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}

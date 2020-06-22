@@ -1,0 +1,23 @@
+.container-2{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+.display-4 {
+    font-size: 2.50rem;
+  
+}
+
+.button-div{
+    
+    margin-left: 30px;
+    float: left;
+}
+
+.btn{
+    width: 8em;
+    height: 3em;
+}
