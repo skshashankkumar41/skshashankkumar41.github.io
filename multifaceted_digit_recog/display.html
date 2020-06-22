@@ -15,6 +15,8 @@
         <h4 class="display-4" id='displayId'></h4>
     </div>
     <div id="container"></div>
+    <div class="button-div">
+        <button class="btn btn-dark " onclick="goHome()" id="backButton">Back</button>
     <script>
     var data = JSON.parse(localStorage["data"]);
     console.log("DISPLAYDATA:::",data)
@@ -44,10 +46,10 @@
             data: [data.prob.eight]}, {
             name: 'Nine',
             data: [data.prob.nine]}]});
+            document.getElementById("backButton").scrollIntoView();
     </script>
 
-<div class="button-div">
-    <button class="btn btn-dark " onclick="goHome()" id="backButton">Back</button>
+
   
 </div>
 
