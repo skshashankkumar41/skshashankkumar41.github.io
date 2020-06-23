@@ -41,6 +41,15 @@ body {
  
 }
 
+.cover-container h1{
+  font-family: 'Neucha';
+  font-size: 50px;
+}
+.cover-container .lead{
+  font-family: 'Neucha';
+  
+}
+
 .cover-container {
   max-width: 42em;
 }
@@ -63,7 +72,12 @@ body {
   
 }
 
-.footer-heart{text-align:center;font-family: open sans, sans-serif;}
+.footer-heart{
+  text-align:center;
+  font-family: 'Euphoria Script', cursive;
+  font-size:25px;
+}
+
 
 .footer-heart a{border-bottom: 1px solid #e4e4e4;color: #f4f3fc;padding-bottom: .25em; text-decoration: none;}
 

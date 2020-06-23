@@ -8,6 +8,7 @@
 }
 .display-4 {
     font-size: 2.50rem;
+    font-family: 'Neucha', cursive;
   
 }
 
@@ -35,7 +36,12 @@
     
   }
 
-.footer-heart{text-align:center;font-family: open sans, sans-serif;}
+  .footer-heart{
+    text-align:center;
+    font-family: 'Euphoria Script', cursive;
+    font-size:25px;
+  }
+
 
 .footer-heart a{border-bottom: 1px solid #23272B;color: #23272B;padding-bottom: .25em; text-decoration: none;}
 
