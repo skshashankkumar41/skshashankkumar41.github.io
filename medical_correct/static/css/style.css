@@ -49,7 +49,7 @@
 }
 
 #correctButton{
-    width: 8em;
+    width: 6em;
 }
 
 .green-border-focus .form-control:focus {
@@ -76,6 +76,7 @@
 .emoji{vertical-align: middle;}
 .footer_rel {
     position: relative;
+    margin-top: 70px;
   }
 .footer {
     position: absolute;
