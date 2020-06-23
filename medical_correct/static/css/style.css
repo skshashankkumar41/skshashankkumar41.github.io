@@ -24,6 +24,9 @@
 .button-div{
     margin-top: 6%;
 }
+.button-div button{
+    margin:4px;
+}
 
 .green-border-focus .form-control:focus {
     border: 2px solid #23272B;

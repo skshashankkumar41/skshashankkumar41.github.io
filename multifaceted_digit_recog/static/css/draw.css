@@ -62,4 +62,8 @@ body.loading .modal {
   text-decoration: none;}
 
 .emoji{vertical-align: middle;}
+
+.button-div button{
+  margin:5px;
+}
   
