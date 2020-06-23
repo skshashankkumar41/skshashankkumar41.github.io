@@ -36,12 +36,13 @@
 }
 
 .display-4 {
+    font-family: 'Neucha', cursive;
     font-size: 2.50rem;
   
 }
 
 .button-div{
-    margin-top: 4.8%;
+    margin-top: 5%;
 }
 .button-div button{
     margin:4px;
