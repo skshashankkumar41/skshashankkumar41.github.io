@@ -7,8 +7,27 @@
     margin-bottom: 5%;
     
 }
+
+.jumbotron{
+  height: 250px;
+}
 .display-3{
     font-size: 3.50rem;
+    font-family: 'Neucha', cursive;
+}
+
+.container p{
+  font-size: 22px;
+  font-family: 'Neucha';
+}
+
+.navbar-brand{
+  font-size: 29px;
+  font-family: 'Euphoria Script', cursive;
+}
+.nav-item a{
+  font-size: 20px;
+  font-family: 'Neucha';
 }
 
 .modal {
@@ -49,7 +68,12 @@ body.loading .modal {
     
   }
 
-  .footer-heart{text-align:center;font-family: open sans, sans-serif;}
+  .footer-heart{
+    text-align:center;
+    font-family: 'Euphoria Script', cursive;
+    font-size:25px;
+  }
+
 
 .footer-heart a{border-bottom: 1px solid #23272B;color: #23272B;padding-bottom: .25em; text-decoration: none;}
 

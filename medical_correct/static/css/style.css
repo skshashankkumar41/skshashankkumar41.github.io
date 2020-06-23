@@ -6,6 +6,16 @@
     margin-bottom: 5%;
 }
 
+.container p{
+    font-size: 22px;
+    font-family: 'Neucha';
+}
+
+.nav-item a{
+    font-size: 20px;
+    font-family: 'Neucha';
+}
+
 .container-2{
     width: 75%;
     margin: 0 auto;
@@ -14,7 +24,16 @@
     margin-bottom: 5%;
     font-size: 15px;
 }
+.navbar-brand{
+    font-size: 29px;
+    font-family: 'Euphoria Script', cursive;
+}
 
+.display-3 {
+    font-size: 55px;
+    font-family: 'Neucha', cursive;
+  
+}
 
 .display-4 {
     font-size: 2.50rem;
@@ -22,7 +41,7 @@
 }
 
 .button-div{
-    margin-top: 6%;
+    margin-top: 4.8%;
 }
 .button-div button{
     margin:4px;
@@ -33,7 +52,11 @@
     box-shadow: 0 0 0 0.2rem rgba(27, 31, 23, 0.25);
 }
 
-.footer-heart{text-align:center;font-family: open sans, sans-serif;}
+.footer-heart{
+    text-align:center;
+    font-family: 'Euphoria Script', cursive;
+    font-size:25px;
+  }
 
 .footer-heart a{border-bottom: 1px solid #23272B;color: #23272B;padding-bottom: .25em; text-decoration: none;}
 
