@@ -1,12 +1,9 @@
 
 window.onload = function(){
-
     canvas.addEventListener('mousemove', function(e) {
         document.getElementById("resetButton").scrollIntoView();
     }, false);
- 
 } 
-
 
 makePostCall = function (url, data) { 
     var json_data = JSON.stringify(data);

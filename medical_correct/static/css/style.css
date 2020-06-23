@@ -1,29 +1,29 @@
 .container-1{
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 1%;
+    margin-top: 4%;
     margin-bottom: 5%;
 }
 
-.inputfield{
-    width: 50%;
+.container-2{
+    width: 75%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 1%;
-    
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 15px;
+}
+
+
+.display-4 {
+    font-size: 2.50rem;
+  
 }
 
 .button-div{
-    margin-top: 8%;
+    margin-top: 6%;
 }
-
-.red-border-focus .form-control:focus {
-    border: 2px solid #f10b3d;
-    box-shadow: 0 0 0 0.2rem rgba(87, 4, 11, 0.25);
-
-}
-
 
 .green-border-focus .form-control:focus {
     border: 2px solid #23272B;
@@ -43,7 +43,17 @@
   text-decoration: none;}
 
 .emoji{vertical-align: middle;}
+.footer_rel {
+    position: relative;
+  }
+.footer {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    
+  }
 
+ 
 .modal {
     display:    none;
     position:   fixed;
@@ -57,17 +67,6 @@
                 50% 50% 
                 no-repeat;
 }
-.footer_rel {
-    position: relative;
-
-  }
-
-.footer {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    
-  }
 
 /* When the body has the loading class, we turn
    the scrollbar off with overflow:hidden */
