@@ -67,10 +67,12 @@ a {
   .tags{
         display: flex;
         position: absolute;
-        margin: 5px;
+        align-items: center;
+        margin: 0 ;
         top: 200px;
         justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap:wrap;
   }
 
   .tags span{
