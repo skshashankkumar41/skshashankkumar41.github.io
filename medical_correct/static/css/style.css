@@ -42,10 +42,14 @@
 }
 
 .button-div{
-    margin-top: 5%;
+    margin-top: 7%;
 }
 .button-div button{
     margin:4px;
+}
+
+#correctButton{
+    width: 8em;
 }
 
 .green-border-focus .form-control:focus {

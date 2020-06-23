@@ -8,6 +8,10 @@
     
 }
 
+#predictButton{
+  width: 8em;
+}
+
 .jumbotron{
   height: 250px;
 }
