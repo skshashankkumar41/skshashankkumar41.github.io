@@ -4,7 +4,7 @@ a {
    }
 
   body {
-    background: #2851A6 url("http://i.stack.imgur.com/spmUM.gif") left repeat-x;
+    background: url("../body-back.jpg") ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -114,7 +114,7 @@ a {
   text-align:center;
   font-family: 'Euphoria Script', cursive;
   font-size:25px;
-  color: azure;
+  color: #ffffff;
   text-shadow: 8px 8px 8px #000000;
 }
 
