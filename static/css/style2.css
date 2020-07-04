@@ -2,6 +2,13 @@ a {
     -webkit-transition: .25s all;
     transition: .25s all;
    }
+
+  body {
+    background: #2851A6 url("http://i.stack.imgur.com/spmUM.gif") left repeat-x;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
    .card {
      padding-left:auto;
      padding-right:auto;
@@ -107,6 +114,8 @@ a {
   text-align:center;
   font-family: 'Euphoria Script', cursive;
   font-size:25px;
+  color: azure;
+  text-shadow: 8px 8px 8px #000000;
 }
 
 .footer-heart a{border-bottom: 1px solid #23272B;color: #23272B;padding-bottom: .25em; text-decoration: none;}
@@ -157,15 +166,15 @@ a {
 
 
 #social-git{
-  color:#24292E
+  color:#ffffff
 }
 
 #social-twi{
-  color: #1A91DA;
+  color: #ffffff;
 }
 #social-med {
-  color: #292929;
+  color: #ffffff;
 }
 #social-lin {
-  color: #0073B2;
+  color: #ffffff;
 }
