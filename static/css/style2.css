@@ -9,6 +9,20 @@ a {
     background-attachment: fixed;
     background-size: cover;
   }
+
+  #git{
+    color:#24292E
+  }
+  
+  #twitter{
+    color: #1A91DA;
+  }
+  #medium{
+    color: #292929;
+  }
+  #linkedin{
+    color: #0073B2;
+  }
    .card {
      padding-left:auto;
      padding-right:auto;
@@ -65,9 +79,16 @@ a {
   }
 
   .navbar-brand{
-      font-size: 29px;
+      font-size: 45px;
       font-family: 'Euphoria Script', cursive;
+      color: white;
+      
   }
+
+  .navbar-brand:hover{
+    color: white;
+    
+}
   .tags{
         display: flex;
         position: absolute;
