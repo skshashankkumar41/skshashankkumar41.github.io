@@ -72,7 +72,7 @@ a {
     font-size:18px;
     font-family: 'Neucha', cursive;
    }
-
+   .collapse .navbar-collapse{display: none;}
    .navbar-nav > li{
     margin-left:10px;
     margin-right:10px;
@@ -89,6 +89,11 @@ a {
     color: white;
     
 }
+
+.navbar-toggler-icon {
+  background-image: url(../icon.png);
+}
+
   .tags{
         display: flex;
         position: absolute;
