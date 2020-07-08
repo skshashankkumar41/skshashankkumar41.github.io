@@ -6,6 +6,11 @@
     margin-bottom: 5%;
 }
 
+.progress{
+  width:25%;
+  margin: 0 auto;
+}
+
 .container p{
     font-size: 22px;
     font-family: 'Neucha';
