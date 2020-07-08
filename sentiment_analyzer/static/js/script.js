@@ -21,7 +21,7 @@ window.onload = function(){
 
 
 function getCorrect(){
-    alert("Server Issue!!! Will Take around 15 Seconds")
+    alert("Server Issue!!! Process will Take around 15 Seconds")
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
     console.log(text)
