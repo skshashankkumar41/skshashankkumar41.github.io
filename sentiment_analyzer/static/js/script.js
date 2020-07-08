@@ -13,6 +13,7 @@ makePostCall = function (url, data) {
     });
 }
 
+
 window.onload = function(){
     document.getElementById("textMedical").onclick = function() {
         document.getElementById("resetButton").scrollIntoView();
@@ -21,7 +22,8 @@ window.onload = function(){
 
 
 function getCorrect(){
-    alert("Server Issue!!! Process will Take around 15 Seconds")
+    console.time("start");
+    alert("Server Issue!!! Process will Take Around 10 Seconds")
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
     console.log(text)
@@ -33,10 +35,10 @@ function getCorrect(){
         ajaxStart: function() { $body.addClass("loading");    },
         ajaxStop: function() { $body.removeClass("loading"); }    
     });
-
     makePostCall("https://cors-anywhere.herokuapp.com/https://sentiment-bert-api.herokuapp.com/post/", payload)
     .success(function(data){
-        console.log("RESPONSE::",data)
+        console.log("RESPONSE::",data);
+        console.timeEnd("start");
         if (data.sentiment == 'Positive'){
             document.getElementById("displayId").innerHTML = '<div style="color:green">' +data.sentiment + " </div>";
             document.getElementById("displayId").scrollIntoView();
@@ -50,7 +52,10 @@ function getCorrect(){
     .fail(function(sender, message, details){
             console.log("Sorry, something went wrong!");
     });
+    
 }
+
+
 
 function doReset(){
     document.getElementById("textMedical").value = "";
