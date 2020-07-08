@@ -60,7 +60,6 @@ window.onload = function(){
 
 function getCorrect(){
     console.time("start");
-    alert("Server Issue!!! Process will Take Around 15-20 Seconds Please Wait :)")
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
     console.log(text)

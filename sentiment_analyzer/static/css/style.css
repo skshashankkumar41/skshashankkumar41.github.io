@@ -100,7 +100,7 @@
     height:     100%;
     width:      100%;
     background: rgba( 255, 255, 255, .8 ) 
-                url('Infinity.gif')
+                url('Infinity-text.gif')
                 50% 50% 
                 no-repeat;
 }
@@ -116,6 +116,7 @@ body.loading .modal {
 body.loading .modal {
     display: block;
 }
+
 
 
 .social_foot{
