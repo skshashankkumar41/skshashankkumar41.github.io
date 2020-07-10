@@ -6,12 +6,7 @@
     margin-bottom: 5%;
 }
 
-.progress{
-  width:25%;
-  margin: 0 auto;
-}
-
-.container p{
+.container-o p{
     font-size: 22px;
     font-family: 'Neucha';
 }
@@ -55,6 +50,14 @@
 
 #correctButton{
     width: 6em;
+}
+
+#container {
+  margin: 0 auto;
+  margin-top: -20px;
+  width: 150px;
+  height: 150px;
+  position: relative;
 }
 
 .green-border-focus .form-control:focus {

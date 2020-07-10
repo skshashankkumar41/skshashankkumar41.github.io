@@ -76,11 +76,65 @@ function getCorrect(){
         console.log("RESPONSE::",data);
         console.timeEnd("start");
         if (data.sentiment == 'Positive'){
-            document.getElementById("displayId").innerHTML = '<div style="color:green">' +data.sentiment + " </div>";
+            document.getElementById("displayId").innerHTML = '<div style="color:#229954">' +data.sentiment + " </div>";
+            var bar = new ProgressBar.Circle(container, {
+                color: '#229954',
+                // This has to be the same size as the maximum width to
+                // prevent clipping
+                strokeWidth: 4,
+                trailWidth: 1,
+                easing: 'easeInOut',
+                duration: 1400,
+                text: {
+                  autoStyleContainer: false
+                },
+                from: { color: '#229954', width: 4 },
+                to: { color: '#229954', width: 4 },
+                // Set default step function for all animate calls
+                step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  circle.path.setAttribute('stroke-width', state.width);
+              
+                  circle.setText((parseFloat(data.proba)*100).toFixed(2) + "%");
+              
+                }
+              });
+              bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+              bar.text.style.fontSize = '2rem';
+              
+              bar.animate(parseFloat(data.proba));  // Number from 0.0 to 1.0
             document.getElementById("displayId").scrollIntoView();
+
+            
         }
         else{
-            document.getElementById("displayId").innerHTML = '<div style="color:red">' +data.sentiment + " </div>";
+            document.getElementById("displayId").innerHTML = '<div style="color:#FA3030">' +data.sentiment + " </div>";
+            var bar = new ProgressBar.Circle(container, {
+                color: '#FA3030',
+                // This has to be the same size as the maximum width to
+                // prevent clipping
+                strokeWidth: 4,
+                trailWidth: 1,
+                easing: 'easeInOut',
+                duration: 1400,
+                text: {
+                  autoStyleContainer: false
+                },
+                from: { color: '#FA3030', width: 4 },
+                to: { color: '#FA3030', width: 4 },
+                // Set default step function for all animate calls
+                step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  circle.path.setAttribute('stroke-width', state.width);
+              
+                    circle.setText((parseFloat(data.proba)*100).toFixed(2)+ "%");
+              
+                }
+              });
+              bar.text.style.fontFamily = '"Raleway",sans-serif';
+              bar.text.style.fontSize = '2rem';
+              
+              bar.animate(parseFloat(data.proba));  // Number from 0.0 to 1.0
             document.getElementById("displayId").scrollIntoView();
         }
         
