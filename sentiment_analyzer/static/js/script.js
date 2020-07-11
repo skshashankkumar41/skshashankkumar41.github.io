@@ -153,4 +153,5 @@ function doReset(){
     document.getElementById("textMedical").value = "";
     document.getElementById("displayId").innerHTML = "";
     document.getElementById("container").innerHTML = "";
+    document.getElementById("textMedical").scrollIntoView();
 }
