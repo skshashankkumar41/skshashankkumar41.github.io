@@ -56,6 +56,7 @@ window.onload = function(){
 
 
 function getCorrect(){
+    document.getElementById("displayId").innerHTML= "";
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
     console.log(text)

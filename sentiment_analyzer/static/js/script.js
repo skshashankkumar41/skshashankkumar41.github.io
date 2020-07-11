@@ -59,6 +59,8 @@ window.onload = function(){
 }
 
 function getCorrect(){
+    document.getElementById("container").innerHTML = "";
+    document.getElementById("displayId").innerHTML= "";
     console.time("start");
     var text = document.getElementById("textMedical").value;
     console.log("GOT THE DATA")
