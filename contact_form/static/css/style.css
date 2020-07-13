@@ -9,7 +9,7 @@ body {
 body section {
 	background: white;
 	margin: 60px auto 120px;
-	border-top: 15px solid #313A3D;
+	
 	text-align: center;
 	padding: 50px 0 110px;
 	width: 80%;
@@ -154,3 +154,17 @@ form input[type="submit"]:focus {
 	outline: none;
 	background: #cd6302;
 }
+
+body {
+    background: url("../../../static/body-back.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+body section {
+    background: url("../../../static/body-back.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
