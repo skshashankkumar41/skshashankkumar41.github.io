@@ -102,6 +102,9 @@ function sendEmail(){
             console.log("Sorry, something went wrong!");
     });
   }
+  else if (sendAll == false){
+    alert("Please Fill Form Correctly")
+  }
   else if (sendEmailText == false){
     alert("You have entered an invalid email address!")
   }
