@@ -10,7 +10,7 @@ body section {
 	background: white;
 	margin: 0 auto;
 	text-align: center;
-	padding: 50px 0 110px;
+	padding: 20px 0;
 }
 
 body section h1 {
@@ -247,5 +247,93 @@ body.loading .modal {
 }
 
 .button-div{
-    margin-top: 6%;
+    margin-top: 4%;
+}
+
+.footer_rel {
+	position: relative;
+	margin-top:-40px;
+
+  }
+
+.footer {
+    position: absolute;
+    margin-top: 50px;
+    left: 0;
+    width: 100%;
+    
+  }
+
+.footer >i{
+  margin-left:10px;
+    margin-right:10px;
+}
+
+.footer-heart{
+  text-align:center;
+  font-family: 'Euphoria Script', cursive;
+  font-size:25px;
+  color: #ffffff;
+  text-shadow: 8px 8px 8px #000000;
+}
+
+.footer-heart a{border-bottom: 1px solid #23272B;color: #23272B;padding-bottom: .25em; text-decoration: none;}
+
+.footer-heart a:hover{color:#2196f3; background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  border-bottom: 0;
+  padding-bottom: .3em;
+  text-decoration: none;}
+
+.emoji{vertical-align: middle;}
+
+
+.social_foot{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    text-align:center;
+    width: 100%;
+}
+
+.social_foot a{
+  margin-left:10px;
+    margin-right:10px;
+}
+
+.social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+/*
+ Multicoloured Hover Variations
+*/
+
+
+#social-git{
+  color:#ffffff
+}
+
+#social-twi{
+  color: #ffffff;
+}
+#social-med {
+  color: #ffffff;
+}
+#social-lin {
+  color: #ffffff;
 }
