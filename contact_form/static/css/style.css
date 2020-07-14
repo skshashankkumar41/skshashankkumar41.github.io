@@ -8,12 +8,9 @@ body {
 
 body section {
 	background: white;
-	margin: 60px auto 120px;
-	
+	margin: 0 auto;
 	text-align: center;
 	padding: 50px 0 110px;
-	width: 80%;
-	max-width: 1100px;
 }
 
 body section h1 {
@@ -25,14 +22,14 @@ body section h1 {
 }
 
 form {
-	width: 58.33333%;
+	width: 78.33333%;
 	margin: 0 auto;
 }
 
 form .field {
 	width: 100%;
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 }
 
 form .field label {
@@ -42,7 +39,7 @@ form .field label {
 	left: 0;
 	background: #313A3D;
 	width: 100%;
-	padding: 18px 0;
+	padding: 25px 0;
 	font-size: 1.45em;
 	letter-spacing: 0.075em;
 	-webkit-transition: all 333ms ease-in-out;
@@ -73,9 +70,9 @@ form .field input[type="text"],
     form .field textarea {
 	border: none;
 	background: #E8E9EA;
-	width: 80.5%;
+	width: 100%;
 	margin: 0;
-	padding: 18px 0;
+	padding: 25px 0;
 	padding-left: 19.5%;
 	color: #313A3D;
 	font-size: 1.4em;
@@ -85,7 +82,7 @@ form .field input[type="text"],
 
 form .field input[type="text"]#msg,
       form .field textarea#msg {
-	height: 18px;
+	height: 25px;
 	resize: none;
 	-webkit-transition: all 333ms ease-in-out;
 	-moz-transition: all 333ms ease-in-out;
@@ -110,13 +107,13 @@ form .field input[type="text"]:focus + label, form .field input[type="text"].foc
         form .field textarea:focus + label,
         form .field textarea.focused + label {
 	width: 18%;
-	background: #FD9638;
+	background: #1EAFC0;
 	color: #313A3D;
 }
 
 form .field input[type="text"].focused + label,
       form .field textarea.focused + label {
-	color: #FD9638;
+	color: #1EAFC0;
 }
 
 form .field:hover label {
@@ -126,14 +123,14 @@ form .field:hover label {
 }
 
 form input[type="submit"] {
-	background: #FD9638;
+	background: #313A3D;
     color: white;
-    margin-top: 20px;
+    margin-top: 45px;
 	-webkit-appearance: none;
 	border: none;
 	text-transform: uppercase;
 	position: relative;
-	padding: 13px 50px;
+	padding: 20px 50px;
 	font-size: 1.4em;
 	letter-spacing: 0.1em;
 	font-family: 'Lato', sans-serif;
@@ -147,12 +144,12 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
 	background: #313A3D;
-	color: #FD9638;
+	color: #1EAFC0;
 }
 
 form input[type="submit"]:focus {
 	outline: none;
-	background: #cd6302;
+	background: #1EAFC0;
 }
 
 body {
