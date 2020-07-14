@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="static/css/style.css"/>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+    
     <script src = "static/js/script.js"></script>
     <title>Contact Form</title>
 </head>
@@ -11,7 +12,7 @@
     <section id="hire">
         <h1>Contact Me</h1>
         
-        <form>
+        <form id="form">
               <div class="field name-box">
                     <input type="text" id="name" placeholder="Who Are You?"/>
                     <label for="name">Name</label>
@@ -25,13 +26,18 @@
               </div>
     
               <div class="field msg-box">
-                    <textarea id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+                    <textarea id="msg" rows="4" placeholder="Your message goes here..."></textarea>
                     <label for="msg">Msg</label>
                     <span class="ss-icon">check</span>
               </div>
     
-              <input class="button" type="submit" value="Send" />
+             <!--<input class="button" type="submit" value="Send" onclick="sendEmail()" />--> 
       </form>
+      <div class="button-div">
+      <button class="button" id="correctButton" onclick="sendEmail()">Send</button>
+      <button class="Backbutton" id="correctButton" onclick="location.href='../index.html'">Back</button>
+      </div>
     </section>
+    <div class="modal"></div>
 </body>
 </html>

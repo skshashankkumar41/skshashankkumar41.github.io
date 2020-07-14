@@ -40,3 +40,73 @@ $('#hire .field:nth-child(2) input').blur(function () {
         }
     });
 });
+
+
+makePostCall = function (url, data) { 
+  var json_data = JSON.stringify(data);
+   console.log("SENDING DATA")
+   return $.ajax({
+       type: "POST",
+       url: url,
+       data: json_data,
+       dataType: "json",
+       contentType: "application/json;charset=utf-8"
+   });
+}
+
+function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail))
+  {
+    return (true)
+  }
+    
+    return (false)
+}
+
+
+function sendEmail(){
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var msg = document.getElementById("msg").value;
+  sendAll = true 
+  sendEmailText = true
+  if (name == "" || email =="" || msg == ""){
+    sendAll = false
+  }
+  if (ValidateEmail(email) == false){
+    sendEmailText = false
+  }
+
+  console.log("GOT THE DATA")
+  console.log("NAME::",name)
+  console.log("ENAIL::",email)
+  console.log("MSG::",msg)
+  payload = {
+      "name":name,
+      "email":email,
+      "msg":msg
+  }
+  if (sendAll == true && sendEmailText == true){
+    $body = $("body");
+    $(document).on({
+        ajaxStart: function() { $body.addClass("loading");    },
+        ajaxStop: function() { $body.removeClass("loading"); }    
+    });
+    makePostCall("https://eenqa31cg3.execute-api.us-east-2.amazonaws.com/emailAPIver1", payload)
+    .success(function(data){
+        console.log(data)
+        
+    })
+    .fail(function(sender, message, details){
+            console.log("Sorry, something went wrong!");
+    });
+  }
+  else if (sendEmailText == false){
+    alert("You have entered an invalid email address!")
+  }
+  else {
+    alert("Please Fill Form Correctly")
+  }
+  
+}
