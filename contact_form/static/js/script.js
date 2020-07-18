@@ -113,9 +113,11 @@ function sendEmail(){
   }
   else if (sendAll == false){
     alert("Please Fill Form Completely")
+    document.getElementById("correctButton").style.color = "white"
   }
   else if (sendEmailText == false){
     alert("You have entered an invalid email address!")
+    document.getElementById("correctButton").style.color = "white"
   }
   else {
     alert("Please Fill Form Correctly")
