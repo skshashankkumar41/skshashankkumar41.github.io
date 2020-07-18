@@ -149,7 +149,7 @@ form input[type="submit"] {
     margin-top: 25px;
 	-webkit-appearance: none;
 	border: none;
-	width:15%;
+	/*width:15%;*/
 	text-transform: uppercase;
 	position: relative;
 	padding: 20px 50px;
@@ -171,7 +171,7 @@ form input[type="submit"] {
     margin-top: 25px;
 	-webkit-appearance: none;
 	border: none;
-	width:15%;
+	/*width:15%;*/
 	text-transform: uppercase;
 	position: relative;
 	padding: 20px 50px;
@@ -185,6 +185,16 @@ form input[type="submit"] {
 	-ms-transition: all 333ms ease-in-out;
 	transition: all 333ms ease-in-out;
 }
+
+.button-div button{
+	text-align: center;
+    margin-right:4px;
+}
+
+.button-div{
+    margin-top: 3%;
+}
+
 
 .button:hover {
 	background: #313A3D;
@@ -246,13 +256,6 @@ body.loading .modal {
     display: block;
 }
 
-.button-div button{
-    margin:4px;
-}
-
-.button-div{
-    margin-top: 4%;
-}
 
 .footer_rel {
 	position: relative;
