@@ -99,14 +99,14 @@ function sendEmail(){
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
         document.getElementById("msg").value = "";
-        document.getElementById("correctButton").innerHTML = "Sent!!";
+        document.getElementById("correctButton").innerHTML = "Sent &#128525";
         document.getElementById("correctButton").style.color = "#00ff4c"
         document.getElementById("correctButton").style.background = "#313A3D"
         
     })
     .fail(function(sender, message, details){
             console.log("Sorry, something went wrong!");
-            document.getElementById("correctButton").innerHTML = "Not Sent!!";
+            document.getElementById("correctButton").innerHTML = "Not Sent &#128542";
             document.getElementById("correctButton").style.color = "#EA0C0C"
             document.getElementById("correctButton").style.background = "#313A3D"
     });

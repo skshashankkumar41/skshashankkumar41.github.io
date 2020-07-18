@@ -149,6 +149,7 @@ form input[type="submit"] {
     margin-top: 25px;
 	-webkit-appearance: none;
 	border: none;
+	width:15%;
 	text-transform: uppercase;
 	position: relative;
 	padding: 20px 50px;
@@ -170,6 +171,7 @@ form input[type="submit"] {
     margin-top: 25px;
 	-webkit-appearance: none;
 	border: none;
+	width:15%;
 	text-transform: uppercase;
 	position: relative;
 	padding: 20px 50px;
