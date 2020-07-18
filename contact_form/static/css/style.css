@@ -143,6 +143,7 @@ form input[type="submit"] {
 }
 
 .button{
+	cursor: pointer;
 	background: #313A3D;
     color: white;
     margin-top: 25px;
@@ -163,6 +164,7 @@ form input[type="submit"] {
 }
 
 .Backbutton{
+	cursor: pointer;
 	background: #4550b1;
     color: white;
     margin-top: 25px;
@@ -189,7 +191,7 @@ form input[type="submit"] {
 
 .button:focus {
 	outline: none;
-	background: #1EAFC0;
+	background: #313A3D;
 }
 
 form input[type="submit"]:hover {

@@ -96,14 +96,23 @@ function sendEmail(){
     makePostCall("https://eenqa31cg3.execute-api.us-east-2.amazonaws.com/emailAPIver1", payload)
     .success(function(data){
         console.log(data)
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("msg").value = "";
+        document.getElementById("correctButton").innerHTML = "Sent!!";
+        document.getElementById("correctButton").style.color = "#00ff4c"
+        document.getElementById("correctButton").style.background = "#313A3D"
         
     })
     .fail(function(sender, message, details){
             console.log("Sorry, something went wrong!");
+            document.getElementById("correctButton").innerHTML = "Not Sent!!";
+            document.getElementById("correctButton").style.color = "#EA0C0C"
+            document.getElementById("correctButton").style.background = "#313A3D"
     });
   }
   else if (sendAll == false){
-    alert("Please Fill Form Correctly")
+    alert("Please Fill Form Completely")
   }
   else if (sendEmailText == false){
     alert("You have entered an invalid email address!")
