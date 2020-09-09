@@ -25,6 +25,10 @@ a {
   }
 
 
+  .nav-item{
+    padding-bottom: 4px;
+  }
+
   #contactref{
     color:#ffffff;
     font-family: 'Euphoria Script', cursive;
