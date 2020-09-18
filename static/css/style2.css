@@ -3,9 +3,9 @@ a {
     transition: .25s all;
    }
 
-#blank{
-  display: none;
-}
+  #blank{
+    display: none;
+  }
 
   body {
     background: url("../body-back.jpg") ;
