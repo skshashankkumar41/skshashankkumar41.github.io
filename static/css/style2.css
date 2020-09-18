@@ -3,6 +3,10 @@ a {
     transition: .25s all;
    }
 
+#blank{
+  display: none;
+}
+
   body {
     background: url("../body-back.jpg") ;
     background-repeat: no-repeat;
