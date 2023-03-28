@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" /> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Indie+Flower&family=Neucha&display=swap" rel="stylesheet">
+    <script src = "static/js/script_aws.js"></script>
+    <link rel = "icon" href =  "https://i.ibb.co/CWPYfmJ/Logo-Makr-4-URz-BC.png"  type = "image/x-icon"> 
+</head>
+
+<body>
+  
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" id="navigationbar">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../index.html">Back<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../sentiment_analyzer/sentiment.html">Heroku<span class="sr-only">(current)</span></a>
+              </li>
+                <!--
+                <li class="nav-item">
+                  <a class="nav-link" href="multifaceted_digit_recog/draw.html">Research<span class="sr-only">(current)</span></a>
+                </li>-->
+            </ul>
+        </div>
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">Sentiment Analyzer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigationbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              
+            </button>
+        </div>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navigationbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/skshashankkumar41/skshashankkumar41.github.io">Front-End Repo<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/skshashankkumar41/Flask-Sentiment-Analyzer-Heroku">Back-End Repo<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      
+    <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Sentiment Analyzer</h1>
+          <p>Type what's in your mind and we will tell you the sentiment of what you typed.</p>
+          <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+        </div>
+      </div>    
+    <div class="container-1">
+        <div class="form-group green-border-focus">
+          <input type="text" class="form-control" id="textMedical" aria-describedby="emailHelp" placeholder="I love Nutella it is so delicious">
+          <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+        </div>
+        <div class="button-div">
+          <button type="button" class="btn btn-warning" onclick="location.href='../index.html'">Back</button>
+          <button class="btn btn-dark" id="correctButton" onclick="getCorrect()">Sentiment</button>
+            <button class="btn btn-info" id="resetButton" onclick="doReset()">Reset</button>
+            
+            
+        </div>
+    </div>
+    <div class="container-2">
+        <h4 class="display-4" id='displayId'></h4>
+    </div>
+    <div class="footer_rel">
+    <div class="footer">
+    <p class="footer-heart">
+      Made with <g-emoji class="g-emoji" alias="heart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+        <img class="emoji" alt="heart" height="20" width="20" src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png"></g-emoji> by Shashank
+      </p>
+    <div class="social_foot">
+      <a href="https://github.com/skshashankkumar41"> 
+        <i id="social-git" class="fab fa-github fa-2x social"></i>
+      </a>
+      <a href="https://medium.com/@skshashankkumar41">
+        <i id="social-med" class="fab fa-medium fa-2x social"></i>
+      </a>
+      <a  href="https://twitter.com/shashankkumar25">
+        <i id="social-twi" class="fab fa-twitter fa-2x social"></i>
+      </a>
+      <a  href="https://www.linkedin.com/in/skshashankkumar41/">
+        <i id="social-lin" class="fab fa-linkedin fa-2x social"></i>
+      </a>
+  </div>
+  </div>
+</div>
+    <div class="modal"></div>
+</body>
+</html>
